@@ -6,12 +6,15 @@
  * Time: 19:34
  */
 
+use App\User;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ViewAnotherUsersTweetsTest extends TestCase
 {
+
+    use DatabaseMigrations;
 
     public function testViewingAnotherUsersTweets()
     {
